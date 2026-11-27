@@ -766,3 +766,21 @@ button {
     text-align: center;
     margin: 25px auto;
 }
+.music-player {
+    text-align: center;
+    margin: 15px auto 25px;
+    padding: 10px;
+}
+
+.music-player p {
+    color: #e75480;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.music-player iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 12px;
+}
