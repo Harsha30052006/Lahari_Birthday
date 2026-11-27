@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nanna ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<!-- BACKGROUND MUSIC -->
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicButton" onclick="toggleMusic()" class="music-button">
+    🎵 Play Music
+</button>
+
+<!-- SECRET PASSCODE SCREEN -->
+
+<div id="passcodeScreen">
+
+    <div class="lock-icon">🔐</div>
+
+    <h1>A Little Secret for You ❤️</h1>
+
+    <p>Behind this lock is something I made with my whole heart, just for you,  Nanna.</p>
+
+    <p>Enter your secret passcode to continue.</p>
+
+    <input
+        type="password"
+        id="passcodeInput"
+        placeholder="Enter your secret passcode"
+    >
+
+    <button onclick="checkPasscode()">
+        Unlock My Surprise 💗
+    </button>
+
+    <p id="passcodeError"></p>
+
+    <p class="made-by">Made with love, wrapped in memories, and created with all my heart, just for you.❤️ </p>
+
+</div>
+
+    <div class="container hidden" id="websiteContent">
+        <div class="gift">🎁</div>
+
+        <p>A LITTLE SURPRISE FOR YOU</p>
+
+        <h1>Happy Birthday<br>
+            <span>Kannamma ❤️</span>
+        </h1>
+
+        <p class="message">
+            Someone special made something special
+            with love just for you.
+        </p>
+
+        <button onclick="openSurprise()">
+            Open Your Surprise 💗
+        </button>
+
+        
+<div id="surprise" class="container">
+    <h1>Happy Birthday, Ammulu! ❤️</h1>
+
+    <p>Not just a gift, but a little piece of my heart. ❤️ Open this surprise and let my love make your birthday even more special. 💝</p>
+
+    <!-- Gift box -->
+    <div id="giftBox" class="gift-box" onclick="openSurprise()">
+        🎁
+    </div>
+
+    <!-- Add the message HERE, immediately below the gift box -->
+    <p id="giftMessage" class="hidden">
+        Some surprises are wrapped in boxes, but the most beautiful ones are wrapped in love. ❤️ Your little world of memories and emotions awaits inside… 💌
+    </p>
+
+    <p>Tap the gift to open your surprise!</p>
+
+    <button onclick="showMemories()">
+        Our Memories ❤️
+    </button>
+</div>
+
+<!-- PHOTO MEMORIES SECTION -->
+
+<div id="memories" class="container hidden">
+
+    <h1>Our Beautiful Memories ❤️</h1>
+
+    <p class="memory-message">
+        Every picture holds a memory,
+        and every memory reminds me how special you are. 💗
+    </p>
+
+    <div class="gallery">
+        <img src="./photos/photo1.jpg" alt="Our memory 1">
+        <img src="./photos/photo2.jpg" alt="Our memory 2">
+        <img src="./photos/photo3.jpg" alt="Our memory 3">
+        <img src="./photos/photo4.jpg" alt="Our memory 4">
+        <img src="./photos/photo5.jpg" alt="Our memory 5">
+        <img src="./photos/photo6.jpg" alt="Our memory 6">
+        <img src="./photos/photo7.jpg" alt="Our memory 7">
+        <img src="./photos/photo8.jpg" alt="Our memory 8">
+    </div>
+
+    <p class="memory-message">
+        "Every moment with you becomes a beautiful memory, and every tomorrow feels special because 
+        I get to imagine it with you. ❤️ Forever isn't enough to make a lifetime of memories together. 🥰"
+    </p>
+
+<div class="gallery">
+    <!-- Keep all your existing 8 photographs here -->
+</div>
+
+<button onclick="showLetter()">Letter 💌</button>
+<button class="previous-button" onclick="previousToGift()">← Previous</button>
+
+</div>
+
+<!-- LOVE LETTER SECTION -->
+
+<div id="loveLetter" class="container hidden">
+
+    <h1>A Letter For You ❤️</h1>
+
+    <p>There is something special I want to tell you...</p>
+
+    <div class="envelope" onclick="openLetter()">
+        <div class="envelope-flap"></div>
+        <div class="letter">
+            <h2>My Dearest Nanna ❤️</h2>
+
+            <p>
+                You are one of the most beautiful parts of my life.
+                Every moment with you is precious to me.
+                Your smile makes my day brighter, and your happiness
+                means everything to me.
+            </p>
+
+            <p>
+                I wish you endless happiness, love, success and
+                beautiful memories. Happy Birthday, my dear! ❤️
+            </p>
+
+            <h3>Forever yours man</h3>
+        </div>
+    </div>
+
+    <p class="letter-hint">Tap the envelope to open your letter 💌</p>
+
+    <button onclick="showFinalSurprise()">
+        A Little More Love for You ❤️
+    </button>
+
+    <button class="previous-button" onclick="previousToMemories()">
+    ← Previous
+</button>
+
+</div>
+
+<!-- FINAL BIRTHDAY SURPRISE -->
+
+<div id="finalSurprise" class="container hidden">
+
+    <h1>One Last Surprise, Nanna! ❤️</h1>
+
+    <div class="birthday-heart">🥰</div>
+
+    <h2>Happy Birthday, My Dear Bangaram! 🎂</h2>
+
+    <p class="final-message">
+        Today, the world celebrates you, but my heart celebrates the happiness you bring into my life.
+         May your days always sparkle with love, your smile never fade,
+         and your dreams turn into beautiful realities. ❤️✨
+    </p>
+
+    <h1 class="special-message">
+        You are my favourite person! ❤️
+    </h1>
+
+    <p class="signature">
+        With lots of love, from your Forever ❤️
+    </p>
+
+    <div class="celebration-hearts">
+        💗 💕 💖
+    </div>
+
+    <button class="previous-button" onclick="previousToLetter()">
+    ← Previous
+</button>
+
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
